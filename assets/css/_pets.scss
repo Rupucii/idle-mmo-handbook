@@ -1,0 +1,13 @@
+.pet-stats {
+  width: 100%;
+  border-collapse: collapse;
+
+  tr:nth-child(even) {
+    background-color: hsla(0, 0%, 100%, 0.06);
+  }
+
+  &__img {
+    width: 100px;
+    height: 100px;
+  }
+}

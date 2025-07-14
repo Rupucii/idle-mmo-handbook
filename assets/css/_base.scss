@@ -1,0 +1,87 @@
+/* Theme */
+:root { color-scheme: dark; }
+
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full viewport height for HTML and Body */
+// html { font-size: 16px; }
+html, body {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  line-height: $line-hight;
+  background: $color-background;
+  color: $color-text-primary;
+}
+
+/* Default link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover, &:focus { color: $color-action-text-hover; }
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;       // Uses your site's font, size, weight
+  color: inherit;      // Uses current text color
+  cursor: pointer;
+  display: inline-block;
+  text-align: inherit;
+  appearance: none;    // Removes native styles (for Safari)
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+/* Lists with no bullets by default */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Images scale correctly */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+svg {
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 20rem 1fr; // Sidebar + Main content
+  height: 100vh; // Full viewport height
+  font-size: 1rem;
+}
+
+.content {
+  max-width: 120rem;
+  width: 100%;
+  margin-inline: auto;
+  justify-self: center;
+  padding: $spacing-unit * 2;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  font-size: 20px;
+  vertical-align: middle;
+}

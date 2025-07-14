@@ -1,0 +1,11 @@
+.page-title {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+
+  &__icon {
+    width: 1em;
+    height: 1em;
+  }
+  &__text { }
+}

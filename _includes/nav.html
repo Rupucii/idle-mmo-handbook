@@ -1,0 +1,36 @@
+<aside class="sidebar">
+  <button class="sidebar__item sidebar__item--open" onclick="toggleMenu(this)">
+    <span class="sidebar__item-icon">{% include icons/pet.svg %}</span>
+    <span>Pets</span>
+    <span class="sidebar__carret"><i class="material-symbols-outlined">keyboard_arrow_up</i></span>
+  </button>
+
+  <ul class="sidebar__submenu">
+    <li>
+      <a class="sidebar__item {% if page.url == '/pets/stats' %}sidebar__item--active{% endif %}" href="{{ '/pets/stats' | relative_url }}">
+        <span class="sidebar__item-icon">{% include icons/pet-stats.svg %}</span>
+        <span>Stats</span>
+      </a>
+    </li>
+
+    <li>
+      <a class="sidebar__item {% if page.url == '/pets/acquiring' %}sidebar__item--active{% endif %}" href="{{ '/pets/acquiring' | relative_url }}">
+        <span class="sidebar__item-icon">{% include icons/pet-egg.svg %}</span>
+        <span>Acquiring pets</span>
+      </a>
+    </li>
+
+    <li>
+      <a class="sidebar__item {% if page.url == '/pets/battles' %}sidebar__item--active{% endif %}" href="{{ '/pets/battles' | relative_url }}">
+        <span class="sidebar__item-icon">{% include icons/pet-battles.svg %}</span>
+        <span>Battles</span>
+      </a>
+    </li>
+  </ul>
+</aside>
+
+<script>
+  function toggleMenu(button) {
+    button.classList.toggle('sidebar__item--open');
+  }
+</script>

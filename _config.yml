@@ -1,0 +1,10 @@
+title: Handbook
+description: A static site with Jekyll
+baseurl: "" # Leave empty for GitHub Pages root
+url: "" # Will be automatically filled by GitHub Pages
+
+# Disable unnecessary plugins
+plugins: []
+
+# If you want markdown with GitHub-flavored markdown
+markdown: kramdown
